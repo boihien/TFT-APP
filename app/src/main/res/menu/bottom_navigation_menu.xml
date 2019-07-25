@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_support"
+        android:icon="@drawable/ic_support"
+        android:title="main"
+        />
+    <item
+        android:id="@+id/ic_sort"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:title="Activity 1"
+        />
+    <item
+        android:id="@+id/ic_spa"
+        android:icon="@drawable/ic_spa_black_24dp"
+        android:title="Activity 2"
+        />
+    <item
+        android:id="@+id/ic_marks"
+        android:icon="@drawable/ic_marksman_icon"
+        android:title="Activity 3"
+        />
+    <item
+        android:id="@+id/cloudy"
+        android:icon="@drawable/ic_wb_cloudy_black_24dp"
+        android:title="Activity 4"
+        />
+</menu>
