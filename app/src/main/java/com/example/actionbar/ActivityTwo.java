@@ -44,18 +44,11 @@ public class ActivityTwo extends AppCompatActivity {
                         break;
                     case R.id.ic_spa:
                         break;
-                    case R.id.ic_marks:
+                    case R.id.ic_poop:
                         Intent intent3 = new Intent(ActivityTwo.this, ActivityThree.class);
                         startActivity(intent3);
                         overridePendingTransition(0,0);
                         finish();
-                        break;
-                    case R.id.cloudy:
-                        Intent intent4 = new Intent(ActivityTwo.this, ActivityFour.class);
-                        startActivity(intent4);
-                        overridePendingTransition(0,0);
-                        finish();
-                        break;
                 }
 
                 return false;

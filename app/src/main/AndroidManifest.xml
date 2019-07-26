@@ -29,13 +29,6 @@
         </activity>
 
 
-        <activity android:name=".ActivityThree">
-
-        </activity>
-
-        <activity android:name=".ActivityFour">
-
-        </activity>
     </application>
 
 </manifest>

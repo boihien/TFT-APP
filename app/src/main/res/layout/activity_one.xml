@@ -21,7 +21,12 @@
             <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tabs"
+                    android:background="@drawable/white_grey_border_top">
+                </com.google.android.material.tabs.TabLayout>
 
             </com.google.android.material.appbar.AppBarLayout>
 
@@ -34,6 +39,11 @@
             android:layout_below="@+id/relLayoutTopBar"
             android:layout_above="@+id/relLayoutBotBar">
 
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="589dp">
+            </androidx.viewpager.widget.ViewPager>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -57,7 +67,8 @@
                 android:id="@+id/bottomNavView_Bar"
                 android:background="@drawable/white_grey_border_bottom"
                 app:menu="@menu/bottom_navigation_menu"
-                app:itemHorizontalTranslationEnabled="false">
+                app:itemHorizontalTranslationEnabled="false"
+                app:labelVisibilityMode="unlabeled">
 
             </com.google.android.material.bottomnavigation.BottomNavigationView>
 
