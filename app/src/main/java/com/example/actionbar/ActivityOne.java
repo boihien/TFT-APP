@@ -46,15 +46,15 @@ public class ActivityOne extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch(menuItem.getItemId()) {
-                    case R.id.ic_support:
+                    case R.id.ic_home:
                         Intent intent0 = new Intent(ActivityOne.this, MainActivity.class);
                         startActivity(intent0);
                         overridePendingTransition(0,0);
                         finish();
                         break;
-                    case R.id.ic_sort:
+                    case R.id.ic_champions:
                         break;
-                    case R.id.ic_spa:
+                    case R.id.ic_synergies:
                         Intent intent2 = new Intent(ActivityOne.this, ActivityTwo.class);
                         startActivity(intent2);
                         overridePendingTransition(0,0);
@@ -71,7 +71,6 @@ public class ActivityOne extends AppCompatActivity {
             }
         });
     }
-
     private void setupViewPager(ViewPager mViewPager) {
         sectionsPagerAdapter adapter = new sectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Tab1Fragment());

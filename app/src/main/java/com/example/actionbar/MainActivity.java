@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_view_list_black_24dp);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_whatshot_black_24dp);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_wb_cloudy_black_24dp);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavView_Bar);
@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch(menuItem.getItemId()) {
-                    case R.id.ic_support:
+                    case R.id.ic_home:
                         break;
-                    case R.id.ic_sort:
+                    case R.id.ic_champions:
                         Intent intent1 = new Intent(MainActivity.this, ActivityOne.class);
                         startActivity(intent1);
                         overridePendingTransition(0,0);
                         finish();
                         break;
-                    case R.id.ic_spa:
+                    case R.id.ic_synergies:
                         Intent intent2 = new Intent(MainActivity.this, ActivityTwo.class);
                         startActivity(intent2);
                         overridePendingTransition(0,0);
